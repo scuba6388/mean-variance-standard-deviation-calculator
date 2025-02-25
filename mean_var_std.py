@@ -6,7 +6,7 @@ def calculate(list):
     
     tempArr = np.array(list)
 
-    arr = np.fill((3,3), tempArr[0:3], tempArr[3:6], tempArr[6:9]) 
+    arr = np.full((3,3), [tempArr[0:3], tempArr[3:6], tempArr[6:9]]) 
 
     calculations = {
         'mean': [np.mean(arr, axis=0).tolist(), np.mean(arr, axis=1).tolist(), np.mean(arr)],
